@@ -26,10 +26,10 @@ Esta extensão foi desenvolvida como parte do Bootcamp II, seguindo as melhores 
 6. A extensão aparecerá na barra de ferramentas
 
 ### Método 2: Clone do Repositório
-\`\`\`bash
+```bash
 git clone https://github.com/seu-usuario/productivity-helper.git
 cd productivity-helper
-\`\`\`
+```
 
 Depois siga os passos 3-6 do método anterior.
 
@@ -56,7 +56,7 @@ Depois siga os passos 3-6 do método anterior.
 
 ## 🗂️ Estrutura do Projeto
 
-\`\`\`
+```
 productivity-helper/
 ├── src/
 │   ├── popup/              # Interface principal (popup)
@@ -83,7 +83,7 @@ productivity-helper/
 ├── manifest.json          # Configuração da extensão
 ├── README.md
 └── LICENSE
-\`\`\`
+```
 
 ## 🔧 Tecnologias Utilizadas
 
@@ -128,7 +128,7 @@ productivity-helper/
 
 ### APIs Utilizadas
 
-\`\`\`javascript
+```javascript
 // Storage API - Persistência de dados
 chrome.storage.local.set({key: value});
 chrome.storage.local.get(['key']);
@@ -145,7 +145,7 @@ chrome.contextMenus.create({id, title, contexts});
 
 // Notifications API - Notificações do sistema
 chrome.notifications.create({type, title, message});
-\`\`\`
+```
 
 ## 📊 Funcionalidades Detalhadas
 
