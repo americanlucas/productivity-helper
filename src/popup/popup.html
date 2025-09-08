@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productivity Helper</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <img src="../../icons/icon32.jpg" alt="Productivity Helper" class="logo">
+      <h1>Productivity Helper</h1>
+    </header>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="links">Links</button>
+      <button class="tab-btn" data-tab="notes">Notas</button>
+      <button class="tab-btn" data-tab="tasks">Tarefas</button>
+    </div>
+
+    <!-- Tab: Links Salvos -->
+    <div class="tab-content active" id="links">
+      <div class="section">
+        <button id="saveCurrentLink" class="btn btn-primary">
+          💾 Salvar Link Atual
+        </button>
+        <div id="savedLinks" class="links-list">
+          <!-- Links salvos aparecerão aqui -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Anotações -->
+    <div class="tab-content" id="notes">
+      <div class="section">
+        <textarea id="quickNote" placeholder="Digite sua anotação rápida..." rows="4"></textarea>
+        <button id="saveNote" class="btn btn-primary">💾 Salvar Nota</button>
+        <div id="savedNotes" class="notes-list">
+          <!-- Notas salvas aparecerão aqui -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Tarefas -->
+    <div class="tab-content" id="tasks">
+      <div class="section">
+        <div class="task-input">
+          <input type="text" id="newTask" placeholder="Nova tarefa...">
+          <button id="addTask" class="btn btn-primary">➕</button>
+        </div>
+        <div id="tasksList" class="tasks-list">
+          <!-- Tarefas aparecerão aqui -->
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <button id="pingBackground" class="btn btn-secondary">🔄 Ping Background</button>
+      <span id="status" class="status"></span>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

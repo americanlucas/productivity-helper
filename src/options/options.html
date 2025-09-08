@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productivity Helper - Configurações</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <img src="../../icons/icon48.jpg" alt="Productivity Helper" class="logo">
+      <h1>Productivity Helper</h1>
+      <p>Configurações da Extensão</p>
+    </header>
+
+    <main class="main">
+      <section class="section">
+        <h2>Configurações Gerais</h2>
+        
+        <div class="setting-item">
+          <label class="setting-label">
+            <input type="checkbox" id="floatingButton" checked>
+            <span class="checkmark"></span>
+            Mostrar botão flutuante nas páginas
+          </label>
+          <p class="setting-description">Exibe um botão para salvar páginas rapidamente</p>
+        </div>
+
+        <div class="setting-item">
+          <label class="setting-label">
+            <input type="checkbox" id="notifications" checked>
+            <span class="checkmark"></span>
+            Mostrar notificações
+          </label>
+          <p class="setting-description">Exibe notificações quando itens são salvos</p>
+        </div>
+
+        <div class="setting-item">
+          <label class="setting-label">
+            <input type="checkbox" id="contextMenu" checked>
+            <span class="checkmark"></span>
+            Menu de contexto
+          </label>
+          <p class="setting-description">Adiciona opções no menu do botão direito</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Atalhos de Teclado</h2>
+        
+        <div class="shortcut-item">
+          <span class="shortcut-label">Salvar página atual:</span>
+          <kbd>Ctrl + S</kbd>
+        </div>
+        
+        <div class="shortcut-item">
+          <span class="shortcut-label">Salvar seleção como nota:</span>
+          <kbd>Ctrl + Shift + N</kbd>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Estatísticas</h2>
+        
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" id="linksCount">0</div>
+            <div class="stat-label">Links Salvos</div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-number" id="notesCount">0</div>
+            <div class="stat-label">Notas</div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-number" id="tasksCount">0</div>
+            <div class="stat-label">Tarefas</div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-number" id="daysInstalled">0</div>
+            <div class="stat-label">Dias de Uso</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Gerenciar Dados</h2>
+        
+        <div class="action-buttons">
+          <button id="exportData" class="btn btn-primary">📤 Exportar Dados</button>
+          <button id="importData" class="btn btn-secondary">📥 Importar Dados</button>
+          <button id="clearData" class="btn btn-danger">🗑️ Limpar Todos os Dados</button>
+        </div>
+        
+        <input type="file" id="importFile" accept=".json" style="display: none;">
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Productivity Helper v1.0.0</p>
+      <p>Desenvolvido para o Bootcamp II</p>
+    </footer>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
